@@ -3,5 +3,35 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
+
+.Card{
+   border:2px solid rgb(122, 111, 111);
+   padding: 10px;
+   text-align: left;
+}
+
+.title{
+  text-align: left;
+}
+
+.font-color-title{
+  color:green
+}
+.font-color-titler{
+  color:green
+}
+.font-color-author{
+  color:red
+}
+.description{
+  text-align: left;
+  text-indent: 40px;
+}
+
+img{
+  object-fit: cover;
+}
+
 

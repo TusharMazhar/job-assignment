@@ -35,7 +35,8 @@ export default function PostList() {
                  title: post.title,
                  commnets: data.length,
                  author: userName,
-                 commentsList: data
+                 commentsList: data,
+                 body:post.body
                })
             })
             dispatch(setPosts(postArray)) 
