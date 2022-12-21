@@ -5,6 +5,7 @@ import { getApiResponse } from '../apis/apiCall'
 import { Link } from "react-router-dom";
 import { Spin } from 'antd';
 import { v4 as uuid } from 'uuid';
+import { DeleteFilled } from '@ant-design/icons';
 
 
 const PostList = ()=> {
@@ -71,7 +72,7 @@ const PostList = ()=> {
                         <p>Comments: {item.commnets}</p> 
                         <p>Author: {item.author}</p> 
                         <div>
-                            <button onClick={()=>removePost(item.id)} style={{backgroundColor:'red,color:white'}}>Delete</button>
+                            <button onClick={()=>removePost(item.id)} style={{backgroundColor:'red,color:white'}}><DeleteFilled /> Delete</button>
                         </div>
                   </div>)
               }
