@@ -7,7 +7,7 @@ import { Spin } from 'antd';
 import { v4 as uuid } from 'uuid';
 
 
-export default function PostList() {
+const PostList = ()=> {
     let posts = useSelector((state)=>state.setPosts.posts)
     const dispatch = useDispatch()
     useEffect(() => {
@@ -81,3 +81,5 @@ export default function PostList() {
     </div>
   )
 }
+
+export default PostList
