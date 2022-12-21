@@ -66,8 +66,9 @@ const PostList = ()=> {
                   posts.map(item=> 
                   <div key={item.title} style={{backgroundColor:'#A9A9A9',padding:'10px',margin:'10px'}}>
               
+                        Title:
                         <Link to={`/post/${item.id}`}   >
-                            <h3>Title:{item.title}</h3> 
+                            <span style={{fontWeight:'bold',fontSize:'18px'}}>  {item.title}</span> 
                         </Link>
                         <p>Comments: {item.commnets}</p> 
                         <p>Author: {item.author}</p> 
